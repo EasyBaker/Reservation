@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Hotel
+comment0.text=\r\n\ Creates\ an\ ArrayList\ waitLlist\ to\ put\ the\ people\ that\ are\ waiting\ for\ a\ room\ in,\r\n\ gets\ the\ rooms\ and\ the\ people\ that\ are\ in\ them\ and\ places\ people\ into\ a\ room\ there\r\n\ is\ a\ room\ open,\ and\ into\ the\ waitList\ if\ there\ is\ not\ one\ open.\r\n\ Canels\ a\ room\ if\ requsted\ to\ and\ puts\ anybody\ waiting\ in\ the\ waitList\ into\ it\ if\ needed.\r\n\r\n\ @Nathan\r\n\ @v1\r\n
+comment1.params=numRooms
+comment1.target=Hotel(int)
+comment1.text=\r\n\ A\ constructer\ which\ initializes\ the\ Reservation[]\ array\r\n\ and\ waitList\ ArrayList.\r\n
+comment2.params=
+comment2.target=Reservation[]\ getRooms()
+comment2.text=\r\n\ Made\ so\ that\ reservation\ objects\ can\ pass\ along\ to\ the\ cancelAndreassign\ method.\r\n\ @return\ returns\ the\ array\ of\ Reservations\r\n
+comment3.params=guestName
+comment3.target=Reservation\ requestRoom(java.lang.String)
+comment3.text=\r\n\ if\ there\ are\ any\ empty\ rooms\ (rooms\ wtih\ no\ reservation),\ then\ create\ a\ reservation\r\n\ for\ an\ empty\ room\ for\ the\ specified\ guest\ and\ return\ the\ new\ Reservation;\r\n\ otherwise,\ add\ the\ guest\ to\ the\ end\ of\ waitList\ and\ return\ null\r\n\ @return\ returns\ the\ new\ Reservation\ if\ empty\ rooms\r\n\ @return\ returns\ null\ if\ no\ empty\ room\r\n
+comment4.params=res
+comment4.target=Reservation\ cancelAndReassign(Reservation)
+comment4.text=\r\n\ release\ the\ room\ associated\ with\ parameter\ res,\ effectively\ canceling\ the\ reservation;\r\n\ if\ any\ names\ are\ stored\ in\ waitList,\ remove\ the\ first\ name\ and\ create\ a\ Reservation\r\n\ for\ this\ person\ in\ the\ room\ reserved\ by\ res;\ return\ that\ new\ Reservation;\r\n\ if\ waitList\ is\ empty,\ mark\ the\ room\ specified\ by\ res\ as\ empty\ and\ return\ null\r\n\ @precondition\:\ res\ is\ a\ valid\ reservation\ for\ some\ room\ in\ this\ hotel\r\n\ @return\ returns\ the\ new\ reservation\ or\ return\ null\ if\ there\ is\ no\ new\ reservation\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6
